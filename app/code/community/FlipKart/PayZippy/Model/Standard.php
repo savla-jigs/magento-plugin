@@ -30,47 +30,8 @@ class FlipKart_PayZippy_Model_Standard extends Mage_Payment_Model_Method_Abstrac
             if (!($data instanceof Varien_Object)) {
                 $data = new Varien_Object($data);
             }
-            // $info = $this->getInfoInstance();
-           
-            // $payment_method = $data->getPayzippyPaymentMethod();
-            
-            // $info->setPayzippyPaymentMethod($payment_method);
-           
-            // if($payment_method == 'NET' || $payment_method == 'EMI') {
-            //     $info->setPayzippyBankName($data->getPayzippyBankName());
-            // }
-            
-            // if($payment_method == 'EMI') {
-            //     $info->setPayzippyEmiMonths($data->getPayzippyEmiMonths());
-            // }
-            
             return $this;
         }
 
-        /*
-        *Validate payment method's form fields
-        */
-
- 
-        // public function validate()
-        // {
-        //     parent::validate();
-            
-        //     $errorMsg = "";
-            
-        //     $info = $this->getInfoInstance();
-
-        //     $payment_method = $info->getPayzippyPaymentMethod();
-           
-        //     if(empty($payment_method)){
-        //         $errorCode = 'invalid_data';
-        //         $errorMsg = $this->_getHelper()->__('Payment Method is required field');
-        //     }
-
-        //     if($errorMsg){
-        //         Mage::throwException($errorMsg);
-        //     }
-        //     return $this;
-        // }
 }
 ?>
